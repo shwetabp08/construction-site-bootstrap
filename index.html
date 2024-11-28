@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Project- 2: Construction</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="Assests/CSS/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- header -->
+  <div class="container-fluid px-5 d-none d-lg-block">
+    <div class="row">
+        <div class="col-lg-4 text-center py-3">
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="bi bi-geo-alt fs-1 text-warning me-3"></i>
+                <div class="text-start">
+                    <h6 class="text-uppercase fw-bold">Our Office</h6>
+                    <span>123 Street, New York, USA</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center border-start border-end py-3">
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="bi bi-envelope-open fs-1 text-warning me-3"></i>
+                <div class="text-start">
+                    <h6 class="text-uppercase fw-bold">Email Us</h6>
+                    <span>info@example.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center py-3">
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="bi bi-phone-vibrate fs-1 text-warning me-3"></i>
+                <div class="text-start">
+                    <h6 class="text-uppercase fw-bold">Call Us</h6>
+                    <span>+012 345 6789</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg sticky-lg-top bg-color nav-bg py-0">
+    <div class="container-fluid ps-4 pe-lg-0">
+      <a href="index.html" class="navbar-brand ff-roboto">
+        <h1 class="m-0 display-4 fw-semibold text-uppercase text-white">
+          <i class="bi bi-buildings text-warning me-2"></i>
+          WEBUILD
+        </h1>
+      </a>
+      <button class="navbar-toggler bg-warning rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="#" class="nav-a nav-item nav-link active p-xl-4 p-lg-2  text-white fs-5">Home</a>
+            <a href="#" class="nav-a nav-item nav-link p-xl-4 p-lg-2  text-white fs-5">About</a>
+            <a href="#" class="nav-a nav-item nav-link p-xl-4 p-lg-2  text-white fs-5">Service</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-a nav-link p-xl-4 p-lg-2  text-white fs-5 dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu m-0">
+                    <a href="#" class="dropdown-item">Our Project</a>
+                    <a href="#" class="dropdown-item">The Team</a>
+                    <a href="#" class="dropdown-item">Testimonial</a>
+                    <a href="#" class="dropdown-item">Blog Grid</a>
+                    <a href="#" class="dropdown-item">Blog Detail</a>
+                </div>
+            </div>
+            <a href="#" class="nav-a nav-item nav-link p-xl-4 p-lg-2  text-white fs-5">Contact</a>
+            <a href="#" class="nav-item nav-link text-white fs-5 bg-warning nav-btn text-white p-xl-4 p-lg-2 d-none d-lg-block">
+              Get A Quote 
+            <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- carousel/ slider -->
+  <div class="mb-5">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="d-block w-100 bg-carousel1">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+              <div class="text-center px-2 px-md-3 slider-content">
+                <h1 class="fw-bold"><i class="bi bi-house-fill text-warning"></i></h1>
+                <h1 class="text-white fw-bold text-uppercase">Build Your Dream 
+                  <br>
+                  House With Us</h1>
+                  <br>
+                <div>
+                  <a href="#" class="btn bg-warning nav-btn text-white text-uppercase rounded-0 py-md-3 px-md-5 fw-semibold">get a quote</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="d-block w-100 bg-carousel2">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+              <div class="text-center px-2 px-md-3 slider-content">
+                <h1 class="fw-bold"><i class="bi bi-tools text-warning"></i></h1>
+                <h1 class="text-white fw-bold text-uppercase">We Are Trusted For 
+                  <br>
+                  Your Project</h1>
+                  <br>
+                  <div>
+                    <a href="#" class="btn nav-btn bg-warning text-white text-uppercase rounded-0 py-md-3 px-md-5 fw-semibold">contact us</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- section 1 -->
+  <div class="px-5 my-5">
+    <div class="row g-5 mt-lg-0">
+      <div class="col-lg-7">
+        <div>
+          <h1 class="text-uppercase ff-roboto display-5 fw-bold">We are <span class="text-warning">the Leader</span> in <br>
+            Construction Industry</h1>
+            <br>
+        <h4 class="text-uppercase text-secondary ff-roboto fw-bold mb-3">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum tempor sit diam amet diam et eos labore</h4>
+        <p class="text-secondary " style="font-size: 17px;">Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <ul class="text-secondary fw-semibold p-0">
+              <li><p class="fw-semibold mb-2" style="font-size: 17px;"><i class="h5 bi bi-check-lg text-warning me-2"></i>Perfect Planning</p></li>
+              <li><p class="fw-semibold mb-2" style="font-size: 17px;"><i class="h5 bi bi-check-lg text-warning me-2"></i>Professional Workers</p></li>
+              <li><p class="fw-semibold mb-2" style="font-size: 17px;"><i class="h5 bi bi-check-lg text-warning me-2"></i>First Working Process</p></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="text-secondary fw-semibold p-0">
+              <li><p class="fw-semibold mb-2" style="font-size: 17px;"><i class="h5 bi bi-check-lg text-warning me-2"></i>Perfect Planning</p></li>
+              <li><p class="fw-semibold mb-2" style="font-size: 17px;"><i class="h5 bi bi-check-lg text-warning me-2"></i>Professional Workers</p></li>
+              <li><p class="fw-semibold mb-2" style="font-size: 17px;"><i class="h5 bi bi-check-lg text-warning me-2"></i>First Working Process</p></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-secondary mt-2" style="font-size: 17px;">Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos labore</p>
+        <div class="mt-4">
+          <img src="Assests/Images/signature.jpg" alt="signature" class="img-fluid ">
+        </div>
+      </div>
+      <div class="col-lg-5 pb-5" style="min-height:400px">
+        <div class="sec1-bg position-relative h-100 ms-5">
+          <img src="Assests/Images/about.jpg" alt="about" class="w-100 h-100 mt-5 position-absolute" style="object-fit: cover; margin-left: -48px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 2 -->
+  <div class="py-5">
+    <div class="py-5 bg-light px-5">
+    <h1 class="display-5 fw-bold text-center my-5 text-uppercase">We Provide <span class="text-warning">The Best</span><br> Construction Services</h1>
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <figure class="dream">
+        <div class="overflow-hidden">
+          <img src="Assests/Images/service-1.jpg" alt="service-1" class="img-fluid dream-img">
+        </div>
+          <figcaption class="d-flex flex-column justify-content-center align-items-center bg-white">
+              <div class="d-flex justify-content-center bg-white align-items-center position-relative rounded-circle" style="width: 100px; height: 100px; margin-top: -50px;">
+                <h1 class="display-5 service-icon">
+                  <i class="service-icon bi bi-building-fill text-warning"></i>
+                </h1>
+              </div>
+            <div class="text-center  px-4 pb-4">
+              <h4 class="text-uppercase fw-bold">Building Construction</h4>
+              <p class="text-secondary mt-3" style="font-size: 17px;">Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
+              <a href="#" class="text-warning text-uppercase text-decoration-none fw-semibold">read more <span><i class="bi-arrow-right"></i></span></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="dream">
+        <div class="overflow-hidden">
+          <img src="Assests/Images/service-2.jpg" alt="service-2" class="img-fluid dream-img">
+        </div>
+          <figcaption class="d-flex flex-column justify-content-center align-items-center bg-white">
+            <div class="d-flex justify-content-center bg-white align-items-center position-relative rounded-circle" style="width: 100px; height: 100px; margin-top: -50px;">
+              <h1 class="display-5 service-icon">
+                <i class="service-icon bi bi-house-fill text-warning"></i>
+              </h1>
+            </div>
+            <div class="text-center  px-4 pb-4">
+              <h4 class="text-uppercase fw-bold">House Renovation</h4>
+              <p class="text-secondary mt-3" style="font-size: 17px;">Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
+              <a href="#" class="text-warning text-uppercase text-decoration-none fw-semibold">read more <span><i class="bi-arrow-right"></i></span></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="dream">
+        <div class="overflow-hidden">
+          <img src="Assests/Images/service-3.jpg" alt="service-3" class="img-fluid dream-img">
+        </div>
+          <figcaption class="d-flex flex-column justify-content-center align-items-center bg-white">
+            <div class="d-flex justify-content-center bg-white align-items-center position-relative rounded-circle" style="width: 100px; height: 100px; margin-top: -50px;">
+              <h1 class="display-5 service-icon">
+                <i class="service-icon bi bi-palette2 text-warning"></i>
+              </h1>
+            </div>
+            <div class="text-center  px-4 pb-4">
+              <h4 class="text-uppercase fw-bold">Architecture Design</h4>
+              <p class="text-secondary mt-3" style="font-size: 17px;">Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
+              <a href="#" class="text-warning text-uppercase text-decoration-none fw-semibold">read more <span><i class="bi-arrow-right"></i></span></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="dream">
+        <div class="overflow-hidden">
+          <img src="Assests/Images/service-4.jpg" alt="service-4" class="img-fluid dream-img">
+        </div>
+          <figcaption class="d-flex flex-column justify-content-center align-items-center bg-white">
+            <div class="d-flex justify-content-center bg-white align-items-center position-relative rounded-circle" style="width: 100px; height: 100px; margin-top: -50px;">
+              <h1 class="display-5 service-icon">
+                <i class="service-icon bi bi-palette-fill text-warning"></i>
+              </h1>
+            </div>
+            <div class="text-center  px-4 pb-4">
+              <h4 class="text-uppercase fw-bold">Interior Design</h4>
+              <p class="text-secondary mt-3" style="font-size: 17px;">Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
+              <a href="#" class="text-warning text-uppercase text-decoration-none fw-semibold">read more <span><i class="bi-arrow-right"></i></span></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="dream">
+        <div class="overflow-hidden">
+          <img src="Assests/Images/service-5.jpg" alt="service-5" class="img-fluid dream-img">
+        </div>
+          <figcaption class="d-flex flex-column justify-content-center align-items-center bg-white">
+            <div class="d-flex justify-content-center bg-white align-items-center position-relative rounded-circle" style="width: 100px; height: 100px; margin-top: -50px;">
+              <h1 class="display-5 service-icon">
+                <i class="service-icon bi bi-tools text-warning"></i>
+              </h1>
+            </div>
+            <div class="text-center  px-4 pb-4">
+              <h4 class="text-uppercase fw-bold">Fixing & Support</h4>
+              <p class="text-secondary mt-3" style="font-size: 17px;">Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
+              <a href="#" class="text-warning text-uppercase text-decoration-none fw-semibold">read more <span><i class="bi-arrow-right"></i></span></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <figure class="dream">
+        <div class="overflow-hidden">
+          <img src="Assests/Images/service-6.jpg" alt="service-6" class="img-fluid dream-img">
+        </div>
+          <figcaption class="d-flex flex-column justify-content-center align-items-center bg-white">
+            <div class="d-flex justify-content-center bg-white align-items-center position-relative rounded-circle" style="width: 100px; height: 100px; margin-top: -50px;">
+              <h1 class="display-5 service-icon">
+                <i class="service-icon bi bi-brush-fill text-warning"></i>
+              </h1>
+            </div>
+            <div class="text-center  px-4 pb-4">
+              <h4 class="text-uppercase fw-bold">Painting</h4>
+              <p class="text-secondary mt-3" style="font-size: 17px;">Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet magna elitr amet kasd diam duo</p>
+              <a href="#" class="text-warning text-uppercase text-decoration-none fw-semibold">read more <span><i class="bi-arrow-right"></i></span></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- section 3 -->
+  <div class="px-5 py-5">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div>
+          <h1 class="display-5 fw-bold">Request A <span class="text-warning">Call Back</span></h1><br>
+          <p class="text-secondary">Nonumy ipsum amet tempor takimata vero ea elitr. Diam diam ut et eos duo duo sed. Lorem elitr sadipscing eos et ut et stet justo, sit dolore et voluptua labore. Ipsum erat et ea ipsum magna sadipscing lorem. Sit lorem sea sanctus eos. Sanctus sit tempor dolores ipsum stet justo sit erat ea, sed diam sanctus takimata sit. Et at voluptua amet erat justo amet ea ipsum eos, eirmod accusam sea sed ipsum kasd ut.</p><br>
+          <div>
+            <a href="#" class="btn nav-btn bg-warning px-5 py-3 text-white text-uppercase fw-semibold rounded-0">get a quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="py-5 px-4 bg-light">
+          <form action="#" class="mt-4" >
+            <div class="form-group row justify-content-between">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control p-3 rounded-0" id="Name" placeholder="Your Name">
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="email" class="form-control p-3 rounded-0" id="Email" placeholder="Your Email ID">
+              </div>
+            </div>
+  
+            <div class="form-group row">
+              <div class="col-md-6 mb-3">
+              <input type="date" class="form-control p-3 rounded-0" id="DateTime" value="" placeholder="Call Back Date"/>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="time" class="form-control p-3 rounded-0" id="DateTime" value="" placeholder="Call Back Time"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea class="textarea form-control rounded-0" id="SpecialRequest" placeholder="Message" rows="5"></textarea>
+            </div>
+            <div>
+              <a href="#" class="btn nav-btn bg-warning text-uppercase rounded-0 text-white fw-semibold w-100 p-3 mt-3">Submit Request</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 4 -->
+  <div class="my-5">
+    <div class="pt-5 bg-light px-5" style="padding-bottom: 8rem;">
+      <h1 class="display-5 fw-bold text-center my-5 text-uppercase">Some Of Our <span class="text-warning">Popular</span><br> Dream Projects</h1>
+      <div class="d-flex justify-content-center my-5 ">
+        <div class="sec1-bg p-4">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="border border-2 border-warning p-2">
+                <a href="#" class="text-decoration-none">
+                  <div class="bg-dream bg-dream1">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                      <h6 class="text-white text-uppercase m-0">All</h6>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="w-50 mt-1 border-bottom border-5 border-warning"></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="border border-2 border-warning p-2">
+                <a href="#" class="text-decoration-none">
+                  <div class="bg-dream bg-dream2">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                      <h6 class="text-white text-uppercase m-0">construction</h6>
+                    </div>
+                    <div></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="border border-2 border-warning p-2">
+                <a href="#" class="text-decoration-none">
+                  <div class="bg-dream bg-dream3">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                      <h6 class="text-white text-uppercase m-0">renovation</h6>
+                    </div>
+                    <div></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row sec4-g">
+        <div class="col-md-6 col-xl-4 position-relative dream">
+          <div class="overflow-hidden">
+            <img src="Assests/Images/portfolio-1.jpg" alt="portfolio-1" class="img-fluid dream-img">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="px-3 py-2 py-md-2 px-lg-5 py-lg-4 py-xl-3 py-xxl-4 mx-5 mx-lg-3 mx-xl-5 bg-white position-absolute sec-4-top">
+              <h4 class="text-uppercase fw-bold">project name</h4>
+              <p class="text-secondary" style="font-size: 17px;"><span><i class="fs-5 me-1 bi bi-geo-alt-fill text-warning"></i></span> 123 Street, New York, USA</p>
+            </div>
+          </div>
+          <a href="#" class="text-white position-absolute d-none" style="top:40%; left: 43%;">
+            <div >
+              <h1 class="fw-bold display-2"><i class="bi bi-plus-lg"></i></h1>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4 position-relative dream">
+          <div class="overflow-hidden">
+            <img src="Assests/Images/portfolio-2.jpg" alt="portfolio-2" class="img-fluid dream-img">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="px-3 py-2 py-md-2 px-lg-5 py-lg-4 py-xl-3 py-xxl-4 mx-5 mx-lg-3 mx-xl-5 bg-white position-absolute sec-4-top">
+              <h4 class="text-uppercase fw-bold">project name</h4>
+              <p class="text-secondary" style="font-size: 17px;"><span><i class="fs-5 me-1 bi bi-geo-alt-fill text-warning"></i></span> 123 Street, New York, USA</p>
+            </div>
+          </div>
+          <a href="#" class="text-white position-absolute d-none" style="top:40%; left: 43%;">
+            <div >
+              <h1 class="fw-bold display-2"><i class="bi bi-plus-lg"></i></h1>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4 position-relative dream">
+          <div class="overflow-hidden">
+            <img src="Assests/Images/portfolio-3.jpg" alt="portfolio-3" class="img-fluid dream-img">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="px-3 py-2 py-md-2 px-lg-5 py-lg-4 py-xl-3 py-xxl-4 mx-5 mx-lg-3 mx-xl-5 bg-white position-absolute sec-4-top">
+              <h4 class="text-uppercase fw-bold">project name</h4>
+              <p class="text-secondary" style="font-size: 17px;"><span><i class="fs-5 me-1 bi bi-geo-alt-fill text-warning"></i></span> 123 Street, New York, USA</p>
+            </div>
+          </div>
+          <a href="#" class="text-white position-absolute d-none" style="top:40%; left: 43%;">
+            <div >
+              <h1 class="fw-bold display-2"><i class="bi bi-plus-lg"></i></h1>
+            </div>
+          </a>
+          
+        </div>
+        <div class="col-md-6 col-xl-4 position-relative dream">
+          <div class="overflow-hidden">
+            <img src="Assests/Images/portfolio-4.jpg" alt="portfolio-4" class="img-fluid dream-img">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="px-3 py-2 py-md-2 px-lg-5 py-lg-4 py-xl-3 py-xxl-4 mx-5 mx-lg-3 mx-xl-5 bg-white position-absolute sec-4-top">
+              <h4 class="text-uppercase fw-bold">project name</h4>
+              <p class="text-secondary" style="font-size: 17px;"><span><i class="fs-5 me-1 bi bi-geo-alt-fill text-warning"></i></span> 123 Street, New York, USA</p>
+            </div>
+          </div>
+          <a href="#" class="text-white position-absolute d-none" style="top:40%; left: 43%;">
+            <div >
+              <h1 class="fw-bold display-2"><i class="bi bi-plus-lg"></i></h1>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4 position-relative dream">
+          <div class="overflow-hidden">
+            <img src="Assests/Images/portfolio-5.jpg" alt="portfolio-5" class="img-fluid dream-img">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="px-3 py-2 py-md-2 px-lg-5 py-lg-4 py-xl-3 py-xxl-4 mx-5 mx-lg-3 mx-xl-5 bg-white position-absolute sec-4-top">
+              <h4 class="text-uppercase fw-bold">project name</h4>
+              <p class="text-secondary" style="font-size: 17px;"><span><i class="fs-5 me-1 bi bi-geo-alt-fill text-warning"></i></span> 123 Street, New York, USA</p>
+            </div>
+          </div>
+          <a href="#" class="text-white position-absolute d-none" style="top:40%; left: 43%;">
+            <div >
+              <h1 class="fw-bold display-2"><i class="bi bi-plus-lg"></i></h1>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4 position-relative dream">
+          <div class="overflow-hidden">
+            <img src="Assests/Images/portfolio-6.jpg" alt="portfolio-6" class="img-fluid dream-img">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="px-3 py-2 py-md-2 px-lg-5 py-lg-4 py-xl-3 py-xxl-4 mx-5 mx-lg-3 mx-xl-5 bg-white position-absolute sec-4-top">
+              <h4 class="text-uppercase fw-bold">project name</h4>
+              <p class="text-secondary" style="font-size: 17px;"><span><i class="fs-5 me-1 bi bi-geo-alt-fill text-warning"></i></span> 123 Street, New York, USA</p>
+            </div>
+          </div>
+          <a href="#" class="text-white position-absolute d-none" style="top:40%; left: 43%;">
+            <div >
+              <h1 class="fw-bold display-2"><i class="bi bi-plus-lg"></i></h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 5 -->
+    <div class="my-5 px-5">
+    <h1 class="display-5 fw-bold text-center my-5 text-uppercase">We Are <span class="text-warning">Professional & <br>
+      Expert</span> Workers</h1>
+    <div class="row g-5">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <figure class="dream">
+          <div class="row g-0">
+            <div class="col-10 overflow-hidden"><img src="Assests/Images/team-1.jpg" alt="team-1" class="img-fluid dream-img"></div>
+            <div class="col-2 d-flex flex-column justify-content-between align-items-center py-2 bg-light text-secondary">
+              <div><i class="icon bi bi-twitter"></i></div>
+              <div><i class="icon bi bi-facebook"></i></div>
+              <div><i class="icon bi bi-linkedin"></i></div>
+              <div><i class="icon bi bi-instagram"></i></div>
+              <div><i class="icon bi bi-youtube"></i></div>
+            </div>
+          </div>
+          <figcaption class="bg-light p-4">
+            <h4 class="text-uppercase fw-bold">Adam Phillips</h4>
+            <p class="text-secondary fw-medium" style="font-size: 17px;">CEO & Founder</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <figure class="dream">
+          <div class="row g-0">
+            <div class="col-10 overflow-hidden"><img src="Assests/Images/team-2.jpg" alt="team-2" class="img-fluid dream-img"></div>
+            <div class="col-2 d-flex flex-column justify-content-between align-items-center py-2 bg-light text-secondary">
+              <div><i class="icon bi bi-twitter"></i></div>
+              <div><i class="icon bi bi-facebook"></i></div>
+              <div><i class="icon bi bi-linkedin"></i></div>
+              <div><i class="icon bi bi-instagram"></i></div>
+              <div><i class="icon bi bi-youtube"></i></div>
+            </div>
+          </div>
+          <figcaption class="bg-light p-4">
+            <h4 class="text-uppercase fw-bold">Dylan Adams</h4>
+            <p class="text-secondary fw-medium" style="font-size: 17px;">Civil Engineer</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <figure class="dream">
+          <div class="row g-0">
+            <div class="col-10 overflow-hidden"><img src="Assests/Images/team-3.jpg" alt="team-3" class="img-fluid dream-img"></div>
+            <div class="col-2 d-flex flex-column justify-content-between align-items-center py-2 bg-light text-secondary">
+              <div><i class="icon bi bi-twitter"></i></div>
+              <div><i class="icon bi bi-facebook"></i></div>
+              <div><i class="icon bi bi-linkedin"></i></div>
+              <div><i class="icon bi bi-instagram"></i></div>
+              <div><i class="icon bi bi-youtube"></i></div>
+            </div>
+          </div>
+          <figcaption class="bg-light p-4">
+            <h4 class="text-uppercase fw-bold">Jhon Doe</h4>
+            <p class="text-secondary fw-medium" style="font-size: 17px;">Interior Designer</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <figure class="dream">
+          <div class="row g-0">
+            <div class="col-10 overflow-hidden"><img src="Assests/Images/team-4.jpg" alt="team-4" class="img-fluid dream-img"></div>
+            <div class="col-2 d-flex flex-column justify-content-between align-items-center py-2 bg-light text-secondary">
+              <div><i class="icon bi bi-twitter"></i></div>
+              <div><i class="icon bi bi-facebook"></i></div>
+              <div><i class="icon bi bi-linkedin"></i></div>
+              <div><i class="icon bi bi-instagram"></i></div>
+              <div><i class="icon bi bi-youtube"></i></div>
+            </div>
+          </div>
+          <figcaption class="bg-light p-4">
+            <h4 class="text-uppercase fw-bold">Josh Dunn</h4>
+            <p class="text-secondary fw-medium" style="font-size: 17px;">Painter</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <!-- section 6 -->
+  <div class="my-5 px-5 py-5 bg-light">
+    <h1 class="display-5 fw-bold text-center my-5 text-uppercase">What Our<span class="text-warning">Happy<br>
+      Cleints</span> Say!!!</h1>
+    <div class="row g-0">
+      <div class="d-none d-lg-block col-lg-4">
+        <img src="Assests/Images/testimonial.jpg" alt="testimonial" class="img-fluid w-100 h-100">
+      </div>
+      <div class="col-md-12 col-lg-8 d-flex justify-content-center align-items-center">
+        <div class="my-5 px-md-5 px-lg-0 testimonial-div">
+          <div id="testimonialslider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row gx-4 align-items-center">
+                <div class="client-img col-md-5 col-lg-4">
+                  <img src="Assests/Images/testimonial-1.jpg" class="img-fluid w-100 h-100 bg-light p-lg-3 p-xl-4" alt="testimonial1">
+                </div>
+                <div class="col-md-7 col-lg-8 mt-3 mt-md-0">
+                    <div class="d-flex flex-column w-100 h-100 justify-content-center">
+                      <h4 class="fw-bold text-uppercase">client name</h4>
+                      <p class="text-secondary">Profession</p>
+                      
+                      <p class="fs-5 text-secondary p-fs5">
+                        <span><i class="bi bi-quote h1 text-warning"></i></span>
+                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                        lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.
+                      </p>
+                    </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row gx-4 align-items-center">
+                  <div class="client-img col-md-5 col-lg-4">
+                    <img src="Assests/Images/testimonial-3.jpg" class="img-fluid w-100 h-100 bg-light p-lg-3 p-xl-4" alt="testimonial3">
+                  </div>
+                  <div class="col-md-7 col-lg-8 mt-3 mt-md-0">
+                      <div class="d-flex flex-column w-100 h-100 justify-content-center">
+                        <h4 class="fw-bold text-uppercase">client name</h4>
+                        <p class="text-secondary">Profession</p>
+                        
+                        <p class="fs-5 text-secondary p-fs5">
+                          <span><i class="bi bi-quote h1 text-warning"></i></span>
+                          Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                          lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="row gx-4 align-items-center">
+                  <div class="client-img col-md-5 col-lg-4">
+                    <img src="Assests/Images/testimonial-2.jpg" class="img-fluid w-100 h-100 bg-light p-lg-3 p-xl-4" alt="testimonial2">
+                  </div>
+                  <div class="col-md-7 col-lg-8 mt-3 mt-md-0">
+                      <div class="d-flex flex-column w-100 h-100 justify-content-center">
+                        <h4 class="fw-bold text-uppercase">client name</h4>
+                        <p class="text-secondary">Profession</p>
+                        
+                        <p class="fs-5 text-secondary p-fs5">
+                          <span><i class="bi bi-quote h1 text-warning"></i></span>
+                          Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                          lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialslider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialslider" data-bs-slide="next">
+              <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 7 -->
+  <div class="my-5 px-5">
+    <h1 class="display-5 fw-bold text-center my-5 text-uppercase">We Are <span class="text-warning">Professional & <br>
+      Expert</span> Workers</h1>
+    <div class="row g-4 g-xxl-5">
+      <div class="col-xl-4 col-lg-6 col-md-6">
+        <figure>
+          <img src="Assests/Images/blog-1.jpg" alt="blog-1" class="img-fluid">
+          
+          <figcaption class="bg-light py-4 px-3 px-lg-4">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div>
+                <p class="text-secondary"><span class="me-2"><img src="Assests/Images/user.jpg" alt="user" class="col-3 img-fluid rounded-circle"></span>John Doe</p>
+              </div>
+              <div class="text-secondary">
+                <p><span class="me-2"><i class="bi bi-calendar2-week text-warning fs-5"></i></span>01 Jan, 2024</p>
+              </div>
+            </div>
+            <h4 class="mt-1 text-uppercase fw-bold">Rebum diam clita lorem erat magna est erat</h4>
+            <a href="#" class="fw-semibold text-decoration-none text-warning text-uppercase">read more <span><i class="bi bi-arrow-right"></i></span></a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6">
+        <figure>
+          <img src="Assests/Images/blog-2.jpg" alt="blog-2" class="img-fluid">
+          
+          <figcaption class="bg-light py-4 px-3 px-lg-4">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div>
+                <p class="text-secondary"><span class="me-2"><img src="Assests/Images/user.jpg" alt="user" class="col-3 img-fluid rounded-circle"></span>John Doe</p>
+              </div>
+              <div class="text-secondary">
+                <p><span class="me-2"><i class="bi bi-calendar2-week text-warning fs-5"></i></span>01 Jan, 2024</p>
+              </div>
+            </div>
+            <h4 class="mt-1 text-uppercase fw-bold">Rebum diam clita lorem erat magna est erat</h4>
+            <a href="#" class="fw-semibold text-decoration-none text-warning text-uppercase">read more <span><i class="bi bi-arrow-right"></i></span></a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6">
+        <figure>
+          <img src="Assests/Images/blog-3.jpg" alt="blog-3" class="img-fluid">
+          
+          <figcaption class="bg-light py-4 px-3 px-lg-4">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div>
+                <p class="text-secondary"><span class="me-2"><img src="Assests/Images/user.jpg" alt="user" class="col-3 img-fluid rounded-circle"></span>John Doe</p>
+              </div>
+              <div class=" text-secondary">
+                <p><span class="me-2"><i class="bi bi-calendar2-week text-warning fs-5"></i></span>01 Jan, 2024</p>
+              </div>
+            </div>
+            <h4 class="mt-1 text-uppercase fw-bold">Rebum diam clita lorem erat magna est erat</h4>
+            <a href="#" class="fw-semibold text-decoration-none text-warning text-uppercase">read more <span><i class="bi bi-arrow-right"></i></span></a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="mt-5 bg-color nav-bg">
+   <div class="px-5">
+    <div class="row">
+      <div class="col-lg-6 pt-5 py-lg-5 border-1 border-end border-warning">
+        <a href="#" class="text-decoration-none text-white"><h1 class="display-4 fw-bold"><span class="me-3"><i class="bi-buildings text-warning"></i></span>WEBUILD</h1></a>
+        <ul class="text-secondary fw-medium p-0 mt-5" style="font-size: 17px;">
+          <li class="mt-3 col-11">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</li>
+          <li class="mt-3"><span class="me-2"><i class="bi bi-geo-alt-fill"></i></span>123 Street, New York, USA</li>
+          <li class="mt-3"><span class="me-2"><i class="bi bi-telephone-fill"></i></span>+012 345 67890</li>
+          <li class="mt-3"><span class="me-2"><i class="bi bi-envelope-fill"></i></span>info@example.com</li>
+        </ul>
+        <div class="my-5">
+          <a href="#" class="bg-warning text-white p-2 p-md-3 me-2 nav-btn"><i class="fs-5 bi bi-twitter"></i></a>
+          <a href="#" class="bg-warning text-white p-2 p-md-3 me-2 nav-btn"><i class="fs-5 bi bi-facebook"></i></a>
+          <a href="#" class="bg-warning text-white p-2 p-md-3 me-2 nav-btn"><i class="fs-5 bi bi-linkedin"></i></a>
+          <a href="#" class="bg-warning text-white p-2 p-md-3 me-2 nav-btn"><i class="fs-5 bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6 ps-lg-5">
+        <div class="row mt-lg-5 pt-lg-5">
+          <div class="col-md-6">
+            <h4 class="fw-bold text-white text-uppercase">Quick Links</h4>
+            <ul class="text-secondary fw-medium p-0 mt-3" style="font-size: 17px;">
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Home </a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> About Us</a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Our Services</a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Meet The Team</a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4 class="fw-bold text-white text-uppercase">Popular Links</h4>
+            <ul class="text-secondary fw-medium p-0 mt-3" style="font-size: 17px;">
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Home </a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> About Us</a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Our Services</a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Meet The Team</a></li>
+              <li class="p-1"><a href="#" class="text-decoration-none text-secondary"><span class="fw-bold">></span> Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+          <form action="" class="mt-3 mb-2 mt-lg-5">
+            <div class="form-group row g-0">
+              <div class="col-md-10 col-lg-9">
+                <input type="email" placeholder="your email address" class="text-capitalize form-control p-4 rounded-0">
+              </div>
+              <div class="col-md-2 col-lg-3">
+                <a href="#" class="text-decoration-none"><input type="submit" class="form-control p-4 rounded-0 nav-btn bg-warning border-warning fw-semibold text-uppercase text-white" value="Sign up"></a>
+              </div>
+            </div>
+           
+          </form>
+      </div>
+    </div>
+   </div>
+   <div class="text-white border-top border-warning px-0">
+    <div class="d-flex flex-wrap">
+      <div class="col-12 col-md-6">
+        <div class="py-4 px-5 text-start">
+          <p class="fw-medium text-white" style="font-size: 17px;">&copy; <a href="#" class="text-decoration-none text-warning">Your Site Name.</a> All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="px-lg-5 py-2 text-center w-100 bg-warning footer">
+          <p class="text-white mt-3" style="font-size: 17px;">Designed by <a href="#" style="color: #040F28;" class="text-decoration-none">HTML Codex</a></p>
+          <p class="text-white" style="font-size: 17px;">Distributed by <a href="#" style="color: #040F28;" class="text-decoration-none">ThemeWagon</a></p>
+        </div>
+      </div>
+    </div>
+   </div>
+
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
